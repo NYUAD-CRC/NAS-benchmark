@@ -1,4 +1,5 @@
 #!/bin/bash
+This script is responsible for compilating the different benchmarks with the available classes.
 
 # Loading needed modules 
 module purge
