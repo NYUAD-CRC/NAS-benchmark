@@ -1,0 +1,4 @@
+# Ignore Mac system files
+NPB3.4-MPI/*
+
+slurm*
