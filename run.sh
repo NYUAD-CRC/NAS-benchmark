@@ -1,9 +1,11 @@
 #!/bin/bash
 
+This script is responsible for running the different benchmarks with the available classes.
 #This script can be used in 3 ways:
 #1-./run.sh :choose the benchmark/s,class/es from the list and put number of cores
 #2-./run.sh with he benchamtk name, and/or class name , and/or number of cores (./run.sh is S 16)
 #3-sbatch -n 16 ./run.sh is S 16 (Or) sbatch -n 16 ./run.sh is S (Or) sbatch -n 32 -N 1 ./run.sh is S (one node) : running with sbatch
+
 # Loading needed modules 
 module purge
 module load openmpi/4.1.1rc1
