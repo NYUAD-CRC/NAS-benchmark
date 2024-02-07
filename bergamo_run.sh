@@ -51,7 +51,9 @@ GetCores(){
 #Running function
 run(){
 #	mpiexec -n $ARG3 -x PATH -x LD_LIBRARY_PATH -wdir $PWD --map-by slot bin/$ARG1.$ARG2.x
-mpiexec -n $ARG3 -x PATH -x LD_LIBRARY_PATH -wdir $PWD  bin/$ARG1.$ARG2.x
+#mpiexec -n $ARG3 -x PATH -x LD_LIBRARY_PATH -wdir $PWD  bin/$ARG1.$ARG2.x
+mpiexec -n  $ARG3 bin/$ARG1.$ARG2.x
+
 }
 
 
@@ -73,7 +75,7 @@ fi
 
 #Running the executable
 cd NPB3.4.2/NPB3.4-MPI
-echo "mpiexec -n $ARG3 -x PATH -x LD_LIBRARY_PATH -wdir $PWD --map-by slot  bin/$ARG1.$ARG2.x "
+echo "mpiexec -n $ARG3 bin/$ARG1.$ARG2.x "
 echo "$ARG1"
 echo "$ARG2"
 echo "$ARG3"

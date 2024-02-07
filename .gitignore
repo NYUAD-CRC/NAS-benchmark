@@ -1,4 +1,8 @@
 # Ignore Mac system files
 NPB3.4-MPI/*
-
+NPB3.4.2/
+Bergamo_Interactive_Run_Results/
+Bergamo_Submit_Results/
+*.out
+Jubail_results/
 slurm*
